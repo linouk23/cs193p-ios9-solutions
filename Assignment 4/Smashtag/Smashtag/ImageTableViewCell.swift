@@ -13,7 +13,7 @@ class ImageTableViewCell: UITableViewCell {
     @IBOutlet weak var tweetImage: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    var imageUrl: NSURL? { didSet {updateUI() } }
+    var imageUrl: NSURL? { didSet { updateUI() } }
     
     private func updateUI() {
         if let url = imageUrl {
